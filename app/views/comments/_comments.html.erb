@@ -1,0 +1,11 @@
+<h4>Comments</h4>
+
+<% if commentable.comments.any? %>
+	<ul>
+	<% commentable.comments.each do |comment| %>
+		<li><%= comment.body %></li>
+	<% end %>
+	</ul>
+<% else %>
+	<p>No comments found.</p>
+<% end %>
